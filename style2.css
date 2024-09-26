@@ -1,0 +1,53 @@
+/* Payment Page Styles */
+#payment-options {
+    padding: 30px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.payment-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.bank-button {
+    padding: 15px 25px;
+    background: #35424a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s ease;
+}
+
+.bank-button:hover {
+    background: #ffcc00;
+}
+
+#backButton {
+    background: #35424a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+#backButton:hover {
+    background: #ffcc00;
+}
+
+/* Feedback for Selected Bank */
+#selected-bank {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #35424a;
+}

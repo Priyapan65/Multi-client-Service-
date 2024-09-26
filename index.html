@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Multi-Client Service Platform</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#login">Login As</a></li>
+                <li><a href="#signin">Sign In</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <button id="toggleSidebar">☰</button>
+                <h1>Service Providers</h1>
+            </header>
+
+            <section id="register">
+                <h2>Register as a Service Provider</h2>
+                <form id="registrationForm">
+                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Service Type" required>
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Register</button>
+                </form>
+            </section>
+
+            <section id="services">
+                <h2>Available Services</h2>
+                <div id="serviceList"></div>
+
+                <div class="service-feature" id="payment">
+                    <h3>Payment</h3>
+                    <p>Pay for services securely online.</p>
+                    <button class="feature-button" onclick="alert('Payment feature coming soon!')">Make Payment</button>
+                    <button id="paymentRedirectButton">Go to Payment</button>
+                </div>
+
+                <div class="service-feature" id="booking">
+                    <h3>Service Booking</h3>
+                    <p>Book your preferred service with ease.</p>
+                    <form class="booking-form" onsubmit="handleBooking(event)">
+                        <input type="text" placeholder="Service Name" required>
+                        <input type="date" required>
+                        <button type="submit">Book Now</button>
+                    </form>
+                </div>
+
+                <div class="service-feature" id="reviews">
+                    <h3>Reviews</h3>
+                    <p>Leave your feedback and read others' experiences.</p>
+                    <form class="review-form" onsubmit="handleReview(event)">
+                        <input type="text" placeholder="Your Name" required>
+                        <textarea placeholder="Your Review" required></textarea>
+                        <button type="submit">Submit Review</button>
+                    </form>
+                    <div id="reviewList"></div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 Multi-Client Service Platform</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
